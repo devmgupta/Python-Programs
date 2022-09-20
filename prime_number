@@ -1,0 +1,16 @@
+#Initialize iteration and temp variable
+iter = 0
+temp = 0
+#Enter the number
+number = input("Enter any integer number: ")
+#Convert the number into integer
+n = int(number)
+#for loop
+for iter in range(2, n//2):
+    if n % iter == 0:
+        temp = 1
+        break
+if temp == 1:
+    print("The entered number is not prime")
+else:
+    print("The entered number is prime")
