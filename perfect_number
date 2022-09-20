@@ -1,0 +1,14 @@
+#Initialize the sum
+sum = 0
+#Enter the number
+number = input("Enter any integer number: ")
+n = int(number)
+#for loop
+for i in range(1,(n//2) + 1):
+    remainder = n % i
+    if remainder == 0:
+        sum = sum + i
+if sum == n:
+    print("The entered number is perfect number")
+else:
+    print("The entered number is not a perfect number")
